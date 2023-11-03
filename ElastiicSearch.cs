@@ -18,6 +18,8 @@ public sealed class ElasticsearchContainerTest2 : IAsyncLifetime
 
         var stats = await client.PingAsync();
          
+
+         /// assert
         Assert.True(stats.IsValidResponse);
     }
 
